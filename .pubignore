@@ -1,0 +1,7 @@
+build/
+example/android/
+example/ios/
+example/web/
+example/.metadata
+example/test/
+verification_summary.json

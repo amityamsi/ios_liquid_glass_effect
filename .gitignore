@@ -1,0 +1,17 @@
+.dart_tool/
+.packages
+.flutter-plugins
+.flutter-plugins-dependencies
+build/
+coverage/
+pubspec.lock
+**/Pods/
+**/.symlinks/
+**/.build/
+**/.swiftpm/
+**/DerivedData/
+**/Flutter/ephemeral/
+**/Flutter/Generated.xcconfig
+**/Flutter/flutter_export_environment.sh
+**/local.properties
+.DS_Store

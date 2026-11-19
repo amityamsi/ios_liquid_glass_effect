@@ -1,0 +1,22 @@
+PODS:
+  - Flutter (1.0.0)
+  - ios_liquid_glass_effect (0.1.0-alpha.1):
+    - Flutter
+
+DEPENDENCIES:
+  - Flutter (from `Flutter`)
+  - ios_liquid_glass_effect (from `.symlinks/plugins/ios_liquid_glass_effect/ios`)
+
+EXTERNAL SOURCES:
+  Flutter:
+    :path: Flutter
+  ios_liquid_glass_effect:
+    :path: ".symlinks/plugins/ios_liquid_glass_effect/ios"
+
+SPEC CHECKSUMS:
+  Flutter: 71a624a5bc0c04062bf19101d501e466baf2fb47
+  ios_liquid_glass_effect: 39c8c37e71e0e2865c766ab46771966552ad5903
+
+PODFILE CHECKSUM: 3ba3a73b1b12adcf321a227a745625fe0888cc82
+
+COCOAPODS: 1.16.2

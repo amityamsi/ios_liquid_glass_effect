@@ -1,0 +1,22 @@
+{
+  "package": "ios_liquid_glass_effect",
+  "version": "0.1.0-alpha.1",
+  "date": "2026-11-19",
+  "status": "alpha with passing analysis, tests, and an iOS simulator build",
+  "source_checks": {
+    "yaml_manifests": "passed",
+    "source_paths_versions_local_links": "passed",
+    "bootstrap_shell_syntax": "passed",
+    "bootstrap_preserves_sources_and_refuses_existing_runners": "passed with a stub CLI; no Flutter runner was built",
+    "utf8_source_files": "passed"
+  },
+  "flutter_tests_included": 14,
+  "flutter_tests_executed": true,
+  "dart_formatter_executed": true,
+  "flutter_analyzer_executed": true,
+  "swift_xcode_build_executed": true,
+  "cocoapods_simulator_build_executed": true,
+  "swiftpm_simulator_build_executed": false,
+  "device_visual_validation_executed": false,
+  "staged_pub_publish_dry_run_warnings": 0
+}
