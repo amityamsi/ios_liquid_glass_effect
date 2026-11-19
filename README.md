@@ -10,8 +10,8 @@ Try glass over a photo, color bands, or a contrast grid. Switch between light
 and dark, adjust the tint, and use the floating navigation to try button
 states or check the renderer.
 
-<img width="260" alt="Glass Studio in dark mode over a lake photograph" src="https://pub.dev/packages/ios_liquid_glass_effect/versions/0.1.0-alpha.1/gen-res/gen/doc/media/web-example.webp">
-<img width="260" alt="Glass Studio in light mode with a contrast grid" src="https://pub.dev/packages/ios_liquid_glass_effect/versions/0.1.0-alpha.1/gen-res/gen/doc/media/web-example-light.webp">
+<img width="260" alt="Glass Studio in dark mode over a lake photograph" src="https://raw.githubusercontent.com/amityamsi/ios_liquid_glass_effect/b1e33c74ec3bbacd765e341e1cb12dfcb278ccc5/doc/media/web-example.png">
+<img width="260" alt="Glass Studio in light mode with a contrast grid" src="https://raw.githubusercontent.com/amityamsi/ios_liquid_glass_effect/b1e33c74ec3bbacd765e341e1cb12dfcb278ccc5/doc/media/web-example-light.png">
 
 The captures show the Flutter web fallback. See the [animated demo and runnable example](https://pub.dev/packages/ios_liquid_glass_effect/example).
 
@@ -48,7 +48,7 @@ Physical-device appearance and interaction still need validation.
 For pub.dev installs, add the alpha release to your Flutter app.
 
 ```sh
-flutter pub add 'ios_liquid_glass_effect:^0.1.0-alpha.1'
+flutter pub add 'ios_liquid_glass_effect:^0.1.0-alpha.2'
 ```
 
 To use a local checkout, set the dependency path relative to your app’s

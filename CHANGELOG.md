@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.1.0-alpha.2
+
+- Fixed the screenshot and animated demo links in the README and pub.dev Example tab.
+
 ## 0.1.0-alpha.1
 
 - Added `GlassSurface` with regular and clear UIKit Liquid Glass on iOS 26 and later.

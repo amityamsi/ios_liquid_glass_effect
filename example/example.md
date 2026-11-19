@@ -4,8 +4,8 @@ The example app puts `GlassSurface` and `GlassButton` into a small interactive
 gallery. The floating navigation opens the surfaces, buttons, and renderer
 panels.
 
-<img width="290" alt="Dark Glass Studio with a glass surface over a lake photograph" src="https://pub.dev/packages/ios_liquid_glass_effect/versions/0.1.0-alpha.1/gen-res/gen/doc/media/web-example.webp">
-<img width="290" alt="Light Glass Studio with a clear glass surface over a contrast grid" src="https://pub.dev/packages/ios_liquid_glass_effect/versions/0.1.0-alpha.1/gen-res/gen/doc/media/web-example-light.webp">
+<img width="290" alt="Dark Glass Studio with a glass surface over a lake photograph" src="https://raw.githubusercontent.com/amityamsi/ios_liquid_glass_effect/b1e33c74ec3bbacd765e341e1cb12dfcb278ccc5/doc/media/web-example.png">
+<img width="290" alt="Light Glass Studio with a clear glass surface over a contrast grid" src="https://raw.githubusercontent.com/amityamsi/ios_liquid_glass_effect/b1e33c74ec3bbacd765e341e1cb12dfcb278ccc5/doc/media/web-example-light.png">
 
 - **Surfaces** lets you scroll three backdrops, compare regular and clear glass,
   and adjust the tint.
@@ -14,7 +14,7 @@ panels.
 - **Renderer** shows the selected renderer and lets you force the Flutter
   fallback on iOS.
 
-<img width="290" alt="Animated example switching backdrops, changing the glass, and opening the button's sheet" src="https://pub.dev/packages/ios_liquid_glass_effect/versions/0.1.0-alpha.1/gen-res/gen/doc/media/web-example-scroll.webp">
+<img width="290" alt="Animated example switching backdrops, changing the glass, and opening the button's sheet" src="https://raw.githubusercontent.com/amityamsi/ios_liquid_glass_effect/b1e33c74ec3bbacd765e341e1cb12dfcb278ccc5/doc/media/web-example-scroll.gif">
 
 These captures show the Flutter web fallback. Run the app on iOS 26 or later
 for native UIKit Liquid Glass.
