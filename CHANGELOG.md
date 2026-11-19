@@ -7,5 +7,5 @@
 - Added conventional UIKit materials on older iOS versions and Flutter effects on other platforms.
 - Added `LiquidGlass.getCapabilities()` for native availability and iOS accessibility settings.
 - Included CocoaPods and Swift Package Manager manifests, an interactive example, and integration guides.
-- Added a screenshot and animated preview of the Flutter web example.
+- Added the Glass Studio example gallery with adjustable material, light and dark previews, and an animated walkthrough.
 - Verified the release with Flutter analysis, 14 tests, and an iOS simulator build using CocoaPods.

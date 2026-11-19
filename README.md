@@ -4,7 +4,16 @@
 buttons to Flutter apps on iOS 26 and later. Older iOS versions use UIKit
 materials, and Android, web, and desktop use a Flutter fallback.
 
-[See the screenshot and animated web example on pub.dev](https://pub.dev/packages/ios_liquid_glass_effect/example).
+## Glass Studio demo
+
+Try glass over a photo, color bands, or a contrast grid. Switch between light
+and dark, adjust the tint, and use the floating navigation to try button
+states or check the renderer.
+
+<img width="260" alt="Glass Studio in dark mode over a lake photograph" src="https://pub.dev/packages/ios_liquid_glass_effect/versions/0.1.0-alpha.1/gen-res/gen/doc/media/web-example.webp">
+<img width="260" alt="Glass Studio in light mode with a contrast grid" src="https://pub.dev/packages/ios_liquid_glass_effect/versions/0.1.0-alpha.1/gen-res/gen/doc/media/web-example-light.webp">
+
+The captures show the Flutter web fallback. See the [animated demo and runnable example](https://pub.dev/packages/ios_liquid_glass_effect/example).
 
 ## Features
 
@@ -130,8 +139,8 @@ filters, the fallback adds edge refraction.
 
 ## Run the example
 
-The [example app](example/lib/main.dart) shows surfaces and buttons over
-switchable, scrolling backgrounds, with light and dark themes.
+The [example app](example/lib/main.dart) is an interactive gallery of surfaces,
+buttons, and renderer settings.
 
 If your checkout has no `example/ios/` runner, create it from the package root
 with `bash tool/bootstrap_example.sh ios`. The script also accepts `android`

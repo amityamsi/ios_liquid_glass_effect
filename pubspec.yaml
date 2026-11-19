@@ -13,9 +13,11 @@ topics:
   - ui
 
 screenshots:
-  - description: Glass surfaces and buttons in the Flutter web example.
+  - description: Glass Studio in dark mode with a scrollable photo behind the glass surface.
     path: doc/media/web-example.png
-  - description: The Flutter web example scrolls the backdrop and switches scenes behind the glass controls.
+  - description: Glass Studio in light mode with a grid backdrop and the clear glass material.
+    path: doc/media/web-example-light.png
+  - description: Glass Studio switches backdrops, adjusts the glass, and opens a sheet from a glass button.
     path: doc/media/web-example-scroll.gif
 
 platforms:
