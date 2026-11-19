@@ -3,7 +3,6 @@ description: Native iOS 26 Liquid Glass surfaces and buttons for Flutter, with g
 version: 0.1.0-alpha.1
 homepage: https://www.codemicros.com/
 repository: https://github.com/amityamsi/ios_liquid_glass_effect
-publish_to: none
 
 topics:
   - liquid-glass
