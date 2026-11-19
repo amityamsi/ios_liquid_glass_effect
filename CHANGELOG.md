@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.1.0-alpha.3
+
+- Migrated to `cupertino_ui` and `material_ui` to fix deprecated imports on Flutter 3.50.
+- Raised the minimum SDK versions to Flutter 3.47 and Dart 3.13. Use the standalone `cupertino_ui` types for Cupertino theme overrides and dynamic tints.
+
 ## 0.1.0-alpha.2
 
 - Fixed the screenshot and animated demo links in the README and pub.dev Example tab.

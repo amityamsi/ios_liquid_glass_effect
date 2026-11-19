@@ -28,7 +28,7 @@ The captures show the Flutter web fallback. See the [animated demo and runnable 
 
 ## Requirements
 
-- Flutter 3.41 or later and Dart 3.11 or later.
+- Flutter 3.47 or later and Dart 3.13 or later.
 - Xcode 26 or later with the iOS 26 SDK or newer for iOS builds.
 - An iPhone or iPad running iOS 26 or later for native Liquid Glass.
 
@@ -48,7 +48,7 @@ Physical-device appearance and interaction still need validation.
 For pub.dev installs, add the alpha release to your Flutter app.
 
 ```sh
-flutter pub add 'ios_liquid_glass_effect:^0.1.0-alpha.2'
+flutter pub add 'ios_liquid_glass_effect:^0.1.0-alpha.3'
 ```
 
 To use a local checkout, set the dependency path relative to your app’s
@@ -65,11 +65,12 @@ Rebuild the iOS app after adding the dependency so Flutter registers the plugin.
 ## Quick start
 
 Place a `GlassSurface` over an image, gradient, or scrolling content so there
-is a visible backdrop for the glass to sample.
+is a visible backdrop for the glass to sample. This example uses `material_ui`.
+Add it to your app with `flutter pub add material_ui`.
 
 ```dart
-import 'package:flutter/material.dart';
 import 'package:ios_liquid_glass_effect/ios_liquid_glass_effect.dart';
+import 'package:material_ui/material_ui.dart';
 
 Widget buildGlassCard() {
   return const Stack(
@@ -98,6 +99,8 @@ Widget buildGlassCard() {
 Use `GlassStyle.clear` for more transparency and `tintColor` to add a tint.
 `GlassSurface` keeps its child in Flutter, so your Flutter widgets own their
 layout, gestures, and semantics.
+Import `CupertinoTheme` and `CupertinoDynamicColor` from `cupertino_ui` when
+using a Cupertino theme override or a dynamic tint with the glass widgets.
 
 ## Glass button
 

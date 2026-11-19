@@ -1,6 +1,8 @@
 import 'dart:ui' as ui;
 
-import 'package:flutter/cupertino.dart';
+import 'package:cupertino_ui/cupertino_ui.dart'
+    show CupertinoDynamicColor, CupertinoTheme;
+import 'package:flutter/widgets.dart';
 
 import 'glass_style.dart';
 

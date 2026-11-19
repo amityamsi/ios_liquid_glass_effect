@@ -1,8 +1,9 @@
 import 'dart:math' as math;
 
-import 'package:flutter/cupertino.dart';
+import 'package:cupertino_ui/cupertino_ui.dart'
+    show CupertinoDynamicColor, CupertinoTheme;
 import 'package:flutter/foundation.dart';
-import 'package:flutter/material.dart';
+import 'package:material_ui/material_ui.dart';
 
 import 'fallback_surface.dart';
 import 'glass_style.dart';
@@ -88,6 +89,37 @@ class GlassButton extends StatelessWidget {
     }
     final dark = brightness == Brightness.dark;
     final foreground = dark ? const Color(0xfff8f8f8) : const Color(0xff171717);
+    final button = TextButton(
+      onPressed: onPressed,
+      style: TextButton.styleFrom(
+        foregroundColor: foreground,
+        disabledForegroundColor: foreground.withValues(alpha: 0.45),
+        minimumSize: Size.zero,
+        padding: const EdgeInsets.symmetric(horizontal: 18),
+        shape: const StadiumBorder(),
+        tapTargetSize: MaterialTapTargetSize.shrinkWrap,
+        alignment: Alignment.center,
+        textStyle: const TextStyle(fontSize: 17, fontWeight: FontWeight.w600),
+      ),
+      child: Row(
+        mainAxisAlignment: MainAxisAlignment.center,
+        crossAxisAlignment: CrossAxisAlignment.center,
+        children: [
+          if (fallbackIcon != null) ...[
+            ExcludeSemantics(child: Icon(fallbackIcon, size: 20)),
+            const SizedBox(width: 8),
+          ],
+          Flexible(
+            child: Text(
+              label,
+              maxLines: 1,
+              overflow: TextOverflow.ellipsis,
+              semanticsLabel: accessibilityLabel,
+            ),
+          ),
+        ],
+      ),
+    );
     return SizedBox(
       width: width,
       height: effectiveHeight,
@@ -96,40 +128,9 @@ class GlassButton extends StatelessWidget {
         style: prominent ? GlassStyle.regular : GlassStyle.clear,
         magnification: 1.15,
         tintColor: tint,
-        child: TextButton(
-          onPressed: onPressed,
-          style: TextButton.styleFrom(
-            foregroundColor: foreground,
-            disabledForegroundColor: foreground.withValues(alpha: 0.45),
-            minimumSize: Size.zero,
-            padding: const EdgeInsets.symmetric(horizontal: 18),
-            shape: const StadiumBorder(),
-            tapTargetSize: MaterialTapTargetSize.shrinkWrap,
-            alignment: Alignment.center,
-            textStyle: const TextStyle(
-              fontSize: 17,
-              fontWeight: FontWeight.w600,
-            ),
-          ),
-          child: Row(
-            mainAxisAlignment: MainAxisAlignment.center,
-            crossAxisAlignment: CrossAxisAlignment.center,
-            children: [
-              if (fallbackIcon != null) ...[
-                ExcludeSemantics(child: Icon(fallbackIcon, size: 20)),
-                const SizedBox(width: 8),
-              ],
-              Flexible(
-                child: Text(
-                  label,
-                  maxLines: 1,
-                  overflow: TextOverflow.ellipsis,
-                  semanticsLabel: accessibilityLabel,
-                ),
-              ),
-            ],
-          ),
-        ),
+        child: Material.maybeOf(context) == null
+            ? Material(type: MaterialType.transparency, child: button)
+            : button,
       ),
     );
   }

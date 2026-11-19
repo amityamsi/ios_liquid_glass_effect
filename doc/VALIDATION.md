@@ -22,7 +22,7 @@ the plugin. Mocked method-channel tests do not run `UIGlassEffect` or UIKit.
 
 ## Build and test on your Mac
 
-Use Flutter 3.41+ / Dart 3.11+, and select Xcode 26+ with the iOS 26 SDK.
+Use Flutter 3.47+ / Dart 3.13+, and select Xcode 26+ with the iOS 26 SDK.
 
 From the package root:
 

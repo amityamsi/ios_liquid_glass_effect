@@ -1,10 +1,10 @@
 import 'dart:async';
 
 import 'package:flutter/foundation.dart';
-import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:ios_liquid_glass_effect/ios_liquid_glass_effect.dart';
+import 'package:material_ui/material_ui.dart';
 
 void main() {
   TestWidgetsFlutterBinding.ensureInitialized();
@@ -87,6 +87,28 @@ void main() {
     await tester.tap(find.text('Continue'));
     expect(taps, 1);
     debugDefaultTargetPlatformOverride = null;
+  });
+
+  testWidgets('fallback button works without a Material ancestor', (
+    tester,
+  ) async {
+    var taps = 0;
+    await tester.pumpWidget(
+      Directionality(
+        textDirection: TextDirection.ltr,
+        child: Center(
+          child: GlassButton(
+            label: 'Continue',
+            onPressed: () => taps++,
+            forceFallback: true,
+          ),
+        ),
+      ),
+    );
+
+    expect(tester.takeException(), isNull);
+    await tester.tap(find.text('Continue'));
+    expect(taps, 1);
   });
 
   testWidgets('fallback button magnifies the backdrop', (tester) async {

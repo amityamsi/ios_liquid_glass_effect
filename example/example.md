@@ -33,12 +33,12 @@ flutter run
 
 ## Minimal example
 
-Add `ios_liquid_glass_effect` to a Flutter app and put this in `lib/main.dart`
-to try a surface and button together.
+Add `ios_liquid_glass_effect` and `material_ui` to a Flutter app and put this in
+`lib/main.dart` to try a surface and button together.
 
 ```dart
-import 'package:flutter/material.dart';
 import 'package:ios_liquid_glass_effect/ios_liquid_glass_effect.dart';
+import 'package:material_ui/material_ui.dart';
 
 void main() => runApp(const MaterialApp(home: GlassDemo()));
 

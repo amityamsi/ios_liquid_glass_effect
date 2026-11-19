@@ -1,5 +1,7 @@
-import 'package:flutter/cupertino.dart';
+import 'package:cupertino_ui/cupertino_ui.dart'
+    show CupertinoDynamicColor, CupertinoTheme;
 import 'package:flutter/foundation.dart';
+import 'package:flutter/widgets.dart';
 
 import 'fallback_surface.dart';
 import 'glass_style.dart';

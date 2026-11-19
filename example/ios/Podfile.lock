@@ -1,6 +1,6 @@
 PODS:
   - Flutter (1.0.0)
-  - ios_liquid_glass_effect (0.1.0-alpha.2):
+  - ios_liquid_glass_effect (0.1.0-alpha.3):
     - Flutter
 
 DEPENDENCIES:
@@ -15,7 +15,7 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   Flutter: 71a624a5bc0c04062bf19101d501e466baf2fb47
-  ios_liquid_glass_effect: 153a40e92bfb6c247418eab0b2f2033570a8beb6
+  ios_liquid_glass_effect: b50422ef1d537cce555e14d78b9a92e571be27d4
 
 PODFILE CHECKSUM: 3ba3a73b1b12adcf321a227a745625fe0888cc82
 
